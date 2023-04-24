@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  redis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        CONFIG_FILE: redis.conf
+    ports:
+      - "6379:6379"
+    volumes:
+      - /mnt/f/redis-load-testing/data/large:/data
