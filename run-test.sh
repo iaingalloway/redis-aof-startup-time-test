@@ -25,7 +25,7 @@ wait_for_redis() {
 }
 
 # Default values arguments
-KEYS=20000000
+KEYS=2000000
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
